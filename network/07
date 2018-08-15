@@ -1,0 +1,3 @@
+# Query an external DNS server on the slash16.org
+
+route -n get slash16.org | grep 'gateway' | cut -d ":" -f2 | cut -d " " -f2

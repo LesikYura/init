@@ -1,0 +1,2 @@
+#mac wifi
+ifconfig en1 |grep "ether " | cut -d " " -f2

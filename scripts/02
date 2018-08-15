@@ -1,0 +1,7 @@
+echo "apt-get update -y && \
+apt-get upgrade -y >> /var/log/update_script.log" > \
+/etc/cron.daily/dailyUp.sh
+chmod 755 /etc/cron.daily/dailyUp.sh
+echo "* 4 * * 1 root /etc/cron.daily/dailyUp.sh" | crontab
+crontab -l
+

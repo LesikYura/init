@@ -1,0 +1,3 @@
+route -n get default | grep 'gateway' | cut -d ":" -f2 | cut -d " " -f2
+
+#Identifiy the default gateway in the routing table

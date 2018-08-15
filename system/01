@@ -1,0 +1,5 @@
+cat /etc/debian_version
+#debian version
+
+#user@debian:/etc$ cat debian_version 9.4
+
